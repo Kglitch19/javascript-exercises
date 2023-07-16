@@ -2,7 +2,7 @@ const sumAll = function(start, end) {
     let sum = 0;
     let temp = 0;
 
-    // display ERROR message for non numbers
+    // display ERROR message for non-numbers
     if (!(Number.isInteger(start) && Number.isInteger(end))) {
         return "ERROR";
     }
