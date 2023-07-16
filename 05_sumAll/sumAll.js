@@ -1,6 +1,12 @@
 const sumAll = function(start, end) {
     let sum = 0;
     let temp = 0;
+
+    // display ERROR message for negative numbers
+    if (start < 0 || end < 0) {
+        return "ERROR";
+    }
+
     if (start > end) {
         // swapping values of variables
         temp = start;
