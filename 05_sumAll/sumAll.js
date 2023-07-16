@@ -2,6 +2,11 @@ const sumAll = function(start, end) {
     let sum = 0;
     let temp = 0;
 
+    // display ERROR message for non numbers
+    if (!(Number.isInteger(start) && Number.isInteger(end))) {
+        return "ERROR";
+    }
+
     // display ERROR message for negative numbers
     if (start < 0 || end < 0) {
         return "ERROR";
